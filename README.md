@@ -98,5 +98,7 @@ the Convolver filter, but that's up to you):
 
 You can test the headphone/laptop speaker switching. My observation is that it
 takes about 1-3 seconds for PulseEffects to switch between the presets.
+
 I recommend to add a limiter after the convolver or other effects, so it doesn't sound saturated/distorted. of course, adjust the gain of the effects, and ensure it doesn't peak beyond 0 dB. 
+
 It is recommended to do this on a silent room, with speakers at 70% volume, so you can notice the small differences. 
