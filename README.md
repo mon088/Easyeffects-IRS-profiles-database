@@ -30,7 +30,7 @@ Of course, if the .irs file doesn't exist, you can create a new one.
 
 # Creating a new .irs to contribute to this database:
 
-## How to profile Windows/macOS audio and get the .irs based on your device:
+## How to profile Windows audio and get the .irs based on your device:
 We need to figure out how the filtering is done with Dolby on Windows. To do this, we can simply play an impulse audio file, and measure the output audio, which is the impulse response and we can use it in a convolution filter. Step by step:
 
 1. Install `Audacity` and `VLC` on Windows. If you don't have Windows, you can
