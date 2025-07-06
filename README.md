@@ -116,6 +116,7 @@ It is recommended to do this on a silent room, with speakers at 70% volume, so y
 you can use AutoEQ to get even more accurate sound based on your headphones model.
 
 https://autoeq.app/
-Also, a more detailed webiste that can be of use:
+
+Additionally, a more detailed webiste that can be of help:
 https://gadgetrytech.squig.link/
 
