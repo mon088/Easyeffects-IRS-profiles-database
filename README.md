@@ -3,15 +3,19 @@
 
 On this repository, you'll find a database with IRS (Impulse Response Sound) files, and easyeffects profiles.
 
-This project is based heavily on the work of https://github.com/shuhaowu/linux-thinkpad-speaker-improvements
 
-I thank them a lot, as it fixed my audio, and now I want to expand on it.
+## Background:
+I started this project, after noticing that , for some reason, my laptop speakers had better bass and mid frequencies sound with windows, than with Arch Linux. I though it was my speakers, but I was wrong.
 
+So, I started researching the reason, and ended with https://github.com/shuhaowu/linux-thinkpad-speaker-improvements repo, which helped me to fix and match my audio to the way Windows was doing it. 
+After trial and error, I was able to create a proper json profile for Easyeffects, that now any other user can load.
+
+Now, I want you, the one reading this repo, to help me profile every possible device, so new users can just get the files and enjoy better audio.
+
+## Notes:
 The IRS files were made from Windows/macOS, with the goal in mind of capturing the way those OS do the audio. by using the convolver, with an IRS file, you can replicate the sound that you had with Windows/macOS, on your Linux system.
 
 This project is meant to be a collab with the Linux community, so you don't have a RAW, flat audio output, by having users uploading their own IRS + Easyeffects profiles.
-
-Just create a new folder, and upload your configuration files. the more, the merrier.
 
 ## How to use:
 
@@ -29,6 +33,7 @@ For fine tuning, check that the convolver is using the right `.irs` file.
 I would love anyone on the Linux community, to contribute, and help me grow this repo, into a full database. That way, new Linux users won't need to profile their Windows audio, and just enjoy. 
 
 Of course, if the .irs file doesn't exist, you can create a new one.
+To add files to this repo, just create a new folder, and upload your configuration files, with brand and model of your PC/audio device/laptop.
 
 # Creating a new .irs to contribute to this database:
 
