@@ -34,6 +34,8 @@ Of course, if the .irs file doesn't exist, you can create a new one.
 
 ## How to profile Windows audio and get the .irs based on your device:
 We need to figure out how the filtering is done with Dolby on Windows. To do this, we can simply play an impulse audio file, and measure the output audio, which is the impulse response and we can use it in a convolution filter. Step by step:
+## Note: I recommend you to do this twice or more, depending on how much audio devices you have. 1st, start by only using the speakers of your laptop/PC. then, plug your headphones and repeat the process, and so on.
+## This way, you'll end with 2 or more .irs files for each device. Each device has a different wave, so repeat as needed.
 
 1. Install `Audacity` and `VLC` on Windows. If you don't have Windows, you can
    try installing [Windows to go](https://www.pcmag.com/how-to/how-to-run-windows-10-from-a-usb-drive).
