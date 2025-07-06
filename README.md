@@ -42,26 +42,26 @@ We need to figure out how the filtering is done with Dolby on Windows. To do thi
 ## Note: I recommend you to do this twice or more, depending on how many audio devices you have. 1st, start by only using the speakers of your laptop/PC. then, plug your headphones and repeat the process, and so on.
 ## This way, you'll end with 2 or more .irs files for each device. Each device has a different wave, so repeat as needed.
 
-1. Install `Audacity` and `VLC` on Windows. If you don't have Windows, you can
-   try installing [Windows to go](https://www.pcmag.com/how-to/how-to-run-windows-10-from-a-usb-drive).
-2. Enable all Dolby effects using the Dolby app (`Dolby Audio Premium` at the time of writing this). Convince yourself that it is working by playing some music and turning the Dolby effects on and off.
-3. Open `Audacity`, select `Edit` -> `Preferences` and then select the `Audio Settings` on the left tree.
-4. Under `Interface` -> `Host`, select `Windows WASAPI`
-5. Under `Playback` -> `Device`, select the speakers (`Speaker (Realtek(R) Audio)` for me).
-6. Under `Recording` -> `Device`, select the speakers loopback (`Speaker (Realtek(R) Audio) (loopback)` for me).
-7. Under `Quality`, make sure the `Project Sample Rate` and `Default Sample Rate` is `48000Hz`.
-8. I selected 24-bit for the `Default Sample Format`. 32 bit float might be fine as well.
-9. Click `OK` to save the settings.
-10. Download the impulse WAV file from either [the original source](https://freesound.org/people/unfa/sounds/205620/) or [a mirror of it in this repo](impulse48khz-2sec.wav).
-11. Open the WAV file with VLC. Pause the playback.
-12. Go to `Tools` -> `Preferences` in VLC. On the bottom left, it says `Show settings` and there are two radio boxes, `Simple` and `All`. For me, `Simple` is selected, click `All` to get a more detailed preferences menu.
-13. On the left tree, go to `Audio` -> `Output modules`.
-14. On the right side, the `Audio output module` should be `Windows Multimedia Device output` and the `Media role` should be set to `Video`. I also tried a `Media role` of `Music`, but it made no difference in the impulse response profile on my machine.
-15. Click `Save` to save the settings.
-16. Go back to Audacity, click the Record button (big circle at the top). The recording might be stuck (no waveform shows on screen), which is OK.
-17. Click play in VLC. This should cause the recording to show a waveform in audacity.
-18. Stop the recording in Audacity and stop playback in VLC (if necessary).
-19. Zoom into the peak of the wavform and see something like the following. You have to zoom in quite far. In the screenshot below, that's a range of abouy 4ms.
+1. Install `Audacity` and `VLC` on Windows.
+   If you don't have Windows, you can try using [Windows to go](https://www.intowindows.com/rufus-to-create-windows-to-go-usb-drive/) on an external USB drive.
+3. Enable all Dolby effects using the Dolby app (`Dolby Audio Premium` at the time of writing this). Convince yourself that it is working by playing some music and turning the Dolby effects on and off.
+4. Open `Audacity`, select `Edit` -> `Preferences` and then select the `Audio Settings` on the left tree.
+5. Under `Interface` -> `Host`, select `Windows WASAPI`
+6. Under `Playback` -> `Device`, select the speakers (`Speaker (Realtek(R) Audio)` for me).
+7. Under `Recording` -> `Device`, select the speakers loopback (`Speaker (Realtek(R) Audio) (loopback)` for me).
+8. Under `Quality`, make sure the `Project Sample Rate` and `Default Sample Rate` is `48000Hz`.
+9. I selected 24-bit for the `Default Sample Format`. 32 bit float might be fine as well.
+10. Click `OK` to save the settings.
+11. Download the impulse WAV file from either [the original source](https://freesound.org/people/unfa/sounds/205620/) or [a mirror of it in this repo](impulse48khz-2sec.wav).
+12. Open the WAV file with VLC. Pause the playback.
+13. Go to `Tools` -> `Preferences` in VLC. On the bottom left, it says `Show settings` and there are two radio boxes, `Simple` and `All`. For me, `Simple` is selected, click `All` to get a more detailed preferences menu.
+14. On the left tree, go to `Audio` -> `Output modules`.
+15. On the right side, the `Audio output module` should be `Windows Multimedia Device output` and the `Media role` should be set to `Video`. I also tried a `Media role` of `Music`, but it made no difference in the impulse response profile on my machine.
+16. Click `Save` to save the settings.
+17. Go back to Audacity, click the Record button (big circle at the top). The recording might be stuck (no waveform shows on screen), which is OK.
+18. Click play in VLC. This should cause the recording to show a waveform in audacity.
+19. Stop the recording in Audacity and stop playback in VLC (if necessary).
+20. Zoom into the peak of the wavform and see something like the following. You have to zoom in quite far. In the screenshot below, that's a range of abouy 4ms.
 
 <img src="./ImpulseResponseScreenshot.PNG" />
 
