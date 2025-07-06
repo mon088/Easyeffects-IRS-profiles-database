@@ -22,6 +22,8 @@ Notice the audio quality improving.
 
 For fine tuning, check that the convolver is using the right `.irs` file.
 
+
+
 ## Contributing:
 
 I would love anyone on the Linux community, to contribute, and help me grow this repo, into a full database. That way, new Linux users won't need to profile their Windows audio, and just enjoy. 
@@ -102,3 +104,8 @@ takes about 1-3 seconds for PulseEffects to switch between the presets.
 I recommend to add a limiter after the convolver or other effects, so it doesn't sound saturated/distorted. of course, adjust the gain of the effects, and ensure it doesn't peak beyond 0 dB. 
 
 It is recommended to do this on a silent room, with speakers at 70% volume, so you can notice the small differences. 
+
+## Tip:
+you can use AutoEQ to get even more accurate sound based on your headphones model.
+
+https://autoeq.app/
