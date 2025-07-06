@@ -13,7 +13,7 @@ After trial and error, I was able to create a proper json profile for Easyeffect
 Now, I want you, the one reading this repo, to help me profile every possible device, so new users can just get the files and enjoy better audio.
 
 ## Notes:
-The IRS files were made from Windows/macOS, with the goal in mind of capturing the way those OS do the audio. by using the convolver, with an IRS file, you can replicate the sound that you had with Windows/macOS, on your Linux system.
+The IRS files were made from Windows, and may be possible to be done from macOS too, with the goal in mind of capturing the way those OS do the audio. by using the convolver, with an IRS file, you can replicate the sound that you had with Windows/macOS, on your Linux system.
 
 This project is meant to be a collab with the Linux community, so you don't have a RAW, flat audio output, by having users uploading their own IRS + Easyeffects profiles.
 
