@@ -43,7 +43,7 @@ We need to figure out how the filtering is done with Dolby on Windows. To do thi
 ## This way, you'll end with 2 or more .irs files for each device. Each device has a different wave, so repeat as needed.
 
 1. Install `Audacity` and `VLC` on Windows.
-   If you don't have Windows, you can try using [Windows to go](https://www.intowindows.com/rufus-to-create-windows-to-go-usb-drive/) on an external USB drive.
+   If you don't have Windows, you can try using [Windows to go](https://www.intowindows.com/rufus-to-create-windows-to-go-usb-drive/) on an external USB drive. You can make a Windows VM, to use rufus for this purpose.
 3. Enable all Dolby effects using the Dolby app (`Dolby Audio Premium` at the time of writing this). Convince yourself that it is working by playing some music and turning the Dolby effects on and off.
 4. Open `Audacity`, select `Edit` -> `Preferences` and then select the `Audio Settings` on the left tree.
 5. Under `Interface` -> `Host`, select `Windows WASAPI`
