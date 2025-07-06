@@ -53,6 +53,43 @@ We need to figure out how the filtering is done with Dolby on Windows. To do thi
 20. Select the audio clip centered around the maximum of the waveform, as shown in the above screenshot. Then go to `File` -> `Export Selected Audio`. Save the file as a WAV file.
 21. Rename the resulting file's extension from `.wav` to `.irs`. Keep this file around.
 
-I have sampled some files for various different ThinkPad models. They are in
-the directories here. For some models, I have recorded the impulse response for
-multiple Dolby profiles. Choose the one you like the best.
+## Importing the .irs file into Easyeffects:
+
+0. Ensure no external speakers are plugged in and this is for the internal
+   speakers only. Start playing some music.
+1. `sudo apt intall pulseeffects`
+2. On the left hand side, activate `Convolver`, on the right panels. There's a
+   button that looks like a wave form above `Stereo Width`. Click it.
+3. `Import Pulse` and select the desired `.irs` file. Click `Apply`.
+4. On the left panel, use the arrow buttons of the `Limiter` row and move it
+   below the `Convolver`. Activate that as well.
+   - Without doing this, the convolution may cause the audio to clip and you
+     may here artifacts due to that.
+5. We need to setup a preset so this setup can be turned off when headphones
+   are plugged in. On the top right corner, there's a button to set a preset.
+   Click on it and a small popup will show with a textbox. Type `Laptop
+   Speaker` into it. Press the `+` button. Then press the save button (should
+   be the left-most icon button in the row of 3 buttons).
+6. Press the middle icon button that looks like an refresh button. This will
+   cause this preset to be loaded when the speakers are used.
+7. Plug headphones in. Create a new preset called `Headphones` with the top
+   right buttons. Switch to the new preset by clicking `Load` next to it.
+8. Disable both the `Convolver` and `Limiter` filter.
+9. Press save (left icon button) to save to the filter pipeline (which should
+   have no filters) to the pipeline.
+10. Press the middle icon button to instruct PulseEffects to automatically load
+    this preset when headphones are plugged in.
+11. Click the hamburger menu at the top right of the screen. Go to `General`
+    and click `Start Service at Login`. This makes PulseEffects run on boot.
+    - There might be a problem with this setting. See https://github.com/wwmm/easyeffects/issues/1644.
+    - I have seen that I have to reload the filters in PulseEffects after a
+      reboot for them to take effect.
+12. Optionally could set the `Priority Type` to be `Real Time`. 
+
+Your screen should look something like this (note I edited the Output gain of
+the Convolver filter, but that's up to you):
+
+<img src="./PulseEffects.png" />
+
+You can test the headphone/laptop speaker switching. My observation is that it
+takes about 1-3 seconds for PulseEffects to switch between the presets.
