@@ -17,3 +17,9 @@ Open EasyEffects, and load the profile for your laptop/PC.
 Notice the audio quality improving.
 
 For fine tuning, check that the convolver is using the right `.irs` file.
+
+## Contributing:
+
+I would love anyone on the Linux community, to contribute, and help me grow this repo, into a full database. That way, new Linux users won't need to profile their Windows audio, and just enjoy. 
+
+Of course, if the .irs file doesn't exist, you can create a new one.
