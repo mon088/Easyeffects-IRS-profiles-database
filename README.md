@@ -52,7 +52,7 @@ We need to figure out how the filtering is done with Dolby on Windows. To do thi
 16. Go back to Audacity, click the Record button (big circle at the top). The recording might be stuck (no waveform shows on screen), which is OK.
 17. Click play in VLC. This should cause the recording to show a waveform in audacity.
 18. Stop the recording in Audacity and stop playback in VLC (if necessary).
-19. Zoom into the peak of the wavform and see something like the following. You have to zoom in quite far. In my screenshot below, that's a range of abouy 4ms. If you see just a single peak without anything else even if you zoomed in very far, you probably did something wrong?
+19. Zoom into the peak of the wavform and see something like the following. You have to zoom in quite far. In the screenshot below, that's a range of abouy 4ms.
 
 <img src="./ImpulseResponseScreenshot.PNG" />
 
