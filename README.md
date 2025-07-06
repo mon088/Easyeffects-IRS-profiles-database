@@ -3,6 +3,10 @@
 
 On this repository, you'll find a database with IRS (Impulse Response Sound) files, and easyeffects profiles.
 
+This project is based heavily on the work of https://github.com/shuhaowu/linux-thinkpad-speaker-improvements
+
+I thank them a lot, as it fixed my audio, and now I want to expand on it.
+
 The IRS files were made from Windows/macOS, with the goal in mind of capturing the way those OS do the audio. by using the convolver, with an IRS file, you can replicate the sound that you had with Windows/macOS, on your Linux system.
 
 This project is meant to be a collab with the Linux community, so you don't have a RAW, flat audio output, by having users uploading their own IRS + Easyeffects profiles.
@@ -24,7 +28,9 @@ I would love anyone on the Linux community, to contribute, and help me grow this
 
 Of course, if the .irs file doesn't exist, you can create a new one.
 
-## How to:
+# Creating a new .irs to contribute to this database:
+
+## How to profile Windows/macOS audio and get the .irs based on your device:
 We need to figure out how the filtering is done with Dolby on Windows. To do this, we can simply play an impulse audio file, and measure the output audio, which is the impulse response and we can use it in a convolution filter. Step by step:
 
 1. Install `Audacity` and `VLC` on Windows. If you don't have Windows, you can
@@ -81,7 +87,6 @@ We need to figure out how the filtering is done with Dolby on Windows. To do thi
     this preset when headphones are plugged in.
 11. Click the hamburger menu at the top right of the screen. Go to `General`
     and click `Start Service at Login`. This makes PulseEffects run on boot.
-    - There might be a problem with this setting. See https://github.com/wwmm/easyeffects/issues/1644.
     - I have seen that I have to reload the filters in PulseEffects after a
       reboot for them to take effect.
 12. Optionally could set the `Priority Type` to be `Real Time`. 
@@ -93,3 +98,5 @@ the Convolver filter, but that's up to you):
 
 You can test the headphone/laptop speaker switching. My observation is that it
 takes about 1-3 seconds for PulseEffects to switch between the presets.
+I recommend to add a limiter after the convolver or other effects, so it doesn't sound saturated/distorted. of course, adjust the gain of the effects, and ensure it doesn't peak beyond 0 dB. 
+It is recommended to do this on a silent room, with speakers at 70% volume, so you can notice the small differences. 
