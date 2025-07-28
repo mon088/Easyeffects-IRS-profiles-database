@@ -120,3 +120,22 @@ https://autoeq.app/
 Additionally, a more detailed webiste that can be of help:
 https://gadgetrytech.squig.link/
 
+# References and documentation
+
+You may like to dig deeper into samplerates and quantum values. here are some documentations
+
+This post can help to calculate the right values:
+
+https://www.reddit.com/r/linux_gaming/comments/1gao420/low_latency_guide_for_linux_using_pipewire/
+
+Official docs can be found here:
+
+https://docs.pipewire.org/page_man_pipewire_1.html
+
+Another useful post regarding values:
+
+https://bbs.archlinux.org/viewtopic.php?id=288886
+
+For a more in depth documentation:
+https://wiki.gentoo.org/wiki/PipeWire/en#Configuration_fragments
+
