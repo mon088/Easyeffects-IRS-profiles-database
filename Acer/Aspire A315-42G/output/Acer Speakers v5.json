@@ -1,5 +1,16 @@
 {
     "output": {
+        "bass_enhancer#0": {
+            "amount": 0.0,
+            "blend": 3.0,
+            "bypass": false,
+            "floor": 20.0,
+            "floor-active": true,
+            "harmonics": 7.900000000000002,
+            "input-gain": 0.0,
+            "output-gain": 0.0,
+            "scope": 100.0
+        },
         "blocklist": [],
         "compressor#0": {
             "attack": 130.0,
@@ -14,8 +25,8 @@
             "lpf-frequency": 20000.0,
             "lpf-mode": "off",
             "makeup": 0.0,
-            "mode": "Downward",
-            "output-gain": 0.0,
+            "mode": "Boosting",
+            "output-gain": -12.0,
             "ratio": 5.0,
             "release": 600.0,
             "release-threshold": -100.0,
@@ -37,7 +48,7 @@
             "bypass": false,
             "input-gain": 0.0,
             "ir-width": 100,
-            "kernel-name": "Acer-Aspire A315-42G-speakers",
+            "kernel-name": "laptop speakers-v2",
             "output-gain": 0.0
         },
         "equalizer#0": {
@@ -715,6 +726,9 @@
             },
             "split-channels": false
         },
+        "level_meter#0": {
+            "bypass": false
+        },
         "limiter#0": {
             "alr": false,
             "alr-attack": 5.0,
@@ -737,7 +751,7 @@
         },
         "loudness#0": {
             "bypass": false,
-            "clipping": true,
+            "clipping": false,
             "clipping-range": 6.0,
             "fft": "4096",
             "input-gain": 0.0,
@@ -748,9 +762,11 @@
         "plugins_order": [
             "convolver#0",
             "equalizer#0",
+            "bass_enhancer#0",
             "loudness#0",
             "stereo_tools#0",
             "compressor#0",
+            "level_meter#0",
             "limiter#0"
         ],
         "stereo_tools#0": {
@@ -760,7 +776,7 @@
             "delay": 0.0,
             "input-gain": 0.0,
             "middle-level": 0.0,
-            "middle-panorama": 0.30000000000000004,
+            "middle-panorama": -3.122502256758253e-17,
             "mode": "LR > LR (Stereo Default)",
             "mutel": false,
             "muter": false,
@@ -769,9 +785,9 @@
             "phaser": false,
             "sc-level": 1.0,
             "side-balance": 0.0,
-            "side-level": 0.0,
+            "side-level": 2.7755575615628914e-17,
             "softclip": false,
-            "stereo-base": 0.09999999999999999,
+            "stereo-base": 0.5000000000000002,
             "stereo-phase": 0.0
         }
     }

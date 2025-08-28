@@ -4,7 +4,7 @@
             "amount": 0.0,
             "blend": 3.0,
             "bypass": false,
-            "floor": 20.0,
+            "floor": 30.0,
             "floor-active": true,
             "harmonics": 7.900000000000002,
             "input-gain": 0.0,
@@ -13,22 +13,22 @@
         },
         "blocklist": [],
         "compressor#0": {
-            "attack": 130.0,
+            "attack": 20.0,
             "boost-amount": 6.0,
-            "boost-threshold": -60.0,
+            "boost-threshold": -72.0,
             "bypass": false,
             "dry": -100.0,
             "hpf-frequency": 10.0,
             "hpf-mode": "off",
-            "input-gain": -6.5,
-            "knee": -23.9,
+            "input-gain": 0.0,
+            "knee": -6.0,
             "lpf-frequency": 20000.0,
             "lpf-mode": "off",
             "makeup": 0.0,
             "mode": "Downward",
-            "output-gain": 0.0,
-            "ratio": 5.0,
-            "release": 600.0,
+            "output-gain": -1.5,
+            "ratio": 4.0,
+            "release": 100.0,
             "release-threshold": -100.0,
             "sidechain": {
                 "lookahead": 0.0,
@@ -40,7 +40,7 @@
                 "type": "Feed-forward"
             },
             "stereo-split": false,
-            "threshold": -10.0,
+            "threshold": -12.0,
             "wet": 0.0
         },
         "convolver#0": {
@@ -729,6 +729,9 @@
         "level_meter#0": {
             "bypass": false
         },
+        "level_meter#1": {
+            "bypass": false
+        },
         "limiter#0": {
             "alr": false,
             "alr-attack": 5.0,
@@ -738,16 +741,16 @@
             "bypass": false,
             "dithering": "None",
             "external-sidechain": false,
-            "gain-boost": false,
+            "gain-boost": true,
             "input-gain": 0.0,
             "lookahead": 5.0,
-            "mode": "Herm Tail",
+            "mode": "Herm Thin",
             "output-gain": 0.0,
-            "oversampling": "Half x4(3L)",
-            "release": 10.0,
+            "oversampling": "None",
+            "release": 5.0,
             "sidechain-preamp": 0.0,
             "stereo-link": 100.0,
-            "threshold": -1.0000003576278687
+            "threshold": 0.0
         },
         "loudness#0": {
             "bypass": false,
@@ -765,6 +768,7 @@
             "bass_enhancer#0",
             "loudness#0",
             "stereo_tools#0",
+            "level_meter#1",
             "compressor#0",
             "level_meter#0",
             "limiter#0"
